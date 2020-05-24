@@ -7,3 +7,5 @@ triplo = n1 * 3
 rq = n1 ** (1/2)
 print('{} o dobro de {} vale {}, já o triplo é {} e a raiz quadrada é {:.3f}' .format( nome, n1, dobro, triplo, rq) ,end=' ')
 print('Se bola que aki sou eu ..|.. ')
+
+
