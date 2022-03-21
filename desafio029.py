@@ -5,6 +5,6 @@ v = float(input('Qual sua atual velocidade? '))
 if v > 80:
     print('Voce foi multado por excesso de velocidade!')
     m = (v-80) * 7
-    print('Tens que pagar R${:.2f} de multa, otáriX!' .format(m))
+    print(f'Você pagará R${m :.2f} de multa, melhore!')
 else:
     print('Dirija em segurança!')

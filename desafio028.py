@@ -1,15 +1,17 @@
-#Escreva um programa que faça o computador "pensar" em um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir
+#Escreva um programa que faça o computador escolher um número inteiro entre 0 e 5 e peça para o usuário tentar descobrir
 #qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.
 
 import random
 import time
 print('Olá, vou escolher um número entre 0 e 5 e vc tenta acertar, ok?')
 n = random.randint(0,5)
-escolha = int(input('Diz aí, q nº achas q eu vou escolher: '))
 print('Processando ... ')
 time.sleep(2)
-print('Escolhi o nº {}.' .format(n))
+escolha = int(input('Qual número você acha que eu escolhi? '))
+print('Processando ... ')
+time.sleep(2)
+print(f'Escolhi o nº {n}.')
 if escolha == n:
-    print('Então tu acertou, sabe mto')
+    print('Você acertou!')
 else:
-    print('Então tu errou seu miserável')
+    print('Você errou!')

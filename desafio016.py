@@ -1,9 +1,11 @@
 #Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira
-'''import math
+
+import math
 num = float(input('Digite um número: '))
-print('O nº {} possui {} como parte inteira. '.format(num, math.trunc(num)))'''
-from math import trunc
+print(f'O número {num} possui {math.trunc(num)} como parte inteira. ')
+
+'''from math import trunc
 num = float(input('Digite um número: '))
-print('O número {} possui {} como parte inteira.' .format(num, trunc(num)))
+print(f'O número {num} possui {trunc(num)} como parte inteira.')'''
 
 
