@@ -3,23 +3,22 @@
 
 from datetime import date
 
-datahoje = date.today().year
-matricula = int(input('Atleta, digite sua matrícula para a verificação de sua categoria: '))
-confirmamatricula = str(input('Sua matícula é {}, confirma? Digite S para SIM ou N para NÂO: ' .format(matricula)))
-confirmamatricula = confirmamatricula.upper()
-if confirmamatricula == 'N':
+date_today = date.today().year
+registry = int(input('Atleta, digite sua matrícula para a verificação de sua categoria: '))
+approve_registry = str(input(f'Sua matícula é {registry}, confirma? Digite S para SIM ou N para NÂO: ')).upper()
+if approve_registry == 'N':
     print('Tente novamente:')
     exit(1)
 else:
-    anonascimento = int(input('Para saber sua categoria, digite o ano de seu nascimento - \033[1;30;41mFORMATO 1900\033[m : '))
-idade = datahoje - anonascimento
-if idade <= 9:
+    year_birth = int(input('Para saber sua categoria, digite o ano de seu nascimento - \033[1;30;41mFORMATO 1900\033[m : '))
+age = date_today - year_birth
+if age <= 9:
     print('Sua categoria é: \033[31mMIRIM\033[m')
-elif idade <= 14:
+elif age <= 14:
     print('Sua categoria é: \033[31mINFANTIL\033[m')
-elif idade <= 19:
+elif age <= 19:
     print('Sua categoria é: \033[31mJÚNIOR\033[m')
-elif idade <= 25:
+elif age <= 25:
     print('Sua categoria é: \033[31mSÊNIOR\033[m')
 else:
     print('Sua categoria é: \033[31mMASTER\033[m')

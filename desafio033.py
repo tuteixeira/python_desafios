@@ -1,11 +1,10 @@
-#Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
+#Exercício Python 033: Faça um programa que leia três números e mostre qual é o maior e qual é o menor.
 
-
-print('Oi, preciso de sua ajuda:')
-a = int(input('Digite um nº: '))
-b = int(input('Digite outro: '))
-c = int(input('É o último, prometo ... digite mais um nº: '))
+print('Digite 3 valores para eu os analisar:')
+a = int(input('Primeiro valor: '))
+b = int(input('Segundo valor: '))
+c = int(input('Terceiro valor: '))
 lista = [a, b, c]
 ordem = sorted(lista)
-print('O maior nº é {} e o menor é {}.' .format(ordem[2], ordem[0]))
+print(f'O maior nº é {ordem[2]} e o menor é {ordem[0]}.')
 

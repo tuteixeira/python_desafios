@@ -2,7 +2,7 @@
 
 from random import randint
 
-itens = ['PEDRA', 'PAPEL', 'TESOURA']
+items = ['PEDRA', 'PAPEL', 'TESOURA']
 pc = randint(0,2)
 print(""" Bora jogar seu lixo humano.
 É muito fácil jogar, basta escolher uma das opções abaixo:
@@ -14,8 +14,8 @@ if human != 0 and human != 1 and human != 2:
     print('\033[1;31mCOMANDO INVÁLIDO\033[m')
     exit(1)
 else:
-    print('Eu joguei {}' .format(itens[pc]) ,end='')
-    print(' e você jogou {}.' .format(itens[human]))
+    print(f'Eu joguei {items[pc]}', end='')
+    print(f' e você jogou {items[human]}.')
 if pc == 0 and human == 1:
     print('Vc ganhou!')
 elif pc == 0 and human == 2:

@@ -1,4 +1,4 @@
-#Desenvolva um programa que leia duas notas de um aluno e calcule a sua média
+#Exercício Python 007: Desenvolva um programa que leia duas notas de um aluno e calcule a sua média
 
 aluno = str(input('Nome do aluno: '))
 nota1 = int(input('Então me diga sua nota em Bio: '))

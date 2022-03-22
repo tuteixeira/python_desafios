@@ -1,4 +1,4 @@
-#Faça um programa q leia um nº inteiro qualquer e mostre sua tabuada - Usando o formato .format()
+#Exercício Python 009: Faça um programa q leia um nº inteiro qualquer e mostre sua tabuada - Usando o formato .format()
 
 nome = input('Qual seu nome? ')
 n = int(input(f'Oi {nome}, escolha um número entre 1 e 9: '))

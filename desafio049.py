@@ -1,7 +1,7 @@
 # Exercício Python 049: Refaça o DESAFIO 009, mostrando a tabuada de um número que o usuário escolher, só que agora utilizando um laço for.
 
 name = input('Qual seu nome? ')
-num = float(input('Oi {}, escolha um número : ' .format(name)))
-print('Boa escolha, o nº {} é o meu nº da sorte, eu sei a tabuada completa dele, se liga:' .format(num))
+num = float(input(f'Oi {name}, escolha um número : '))
+print(f'O nº {num} é o meu nº da sorte, eu sei a tabuada completa dele:')
 for c in range(1, 11):
-    print('{:2} x {:2} = {:2}' .format(num, c, num * c))
+    print(f'{num:2} x {c:2} = {num * c:2}')
