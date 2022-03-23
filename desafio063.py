@@ -3,11 +3,11 @@
 n = int(input('Digite um nº: '))
 a = 0
 b = 1
-inicio = 2
+start = 2
 print('0 > 1', end='')
-while inicio < n:
+while start < n:
     out = a + b
     a = b
     b = out
-    inicio += 1
-    print(' > {}'.format(out), end='')
+    start += 1
+    print(f' > {out}', end='')

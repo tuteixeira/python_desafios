@@ -1,8 +1,7 @@
 # Exercício Python 051: Desenvolva um programa que leia o primeiro termo e a razão de uma PA. No final, mostre os 10 primeiros termos dessa progressão.
 
-
-num = int(input('Digite o Primeiro número da PA: '))
-razao = int(input('Digite a Razão da PA: '))
+num = int(input('Digite o Primeiro número da P.A: '))
+razao = int(input('Digite a Razão da P.A: '))
 for c in range(1, 11):
     print(num, end= ' -> ')
     num += razao

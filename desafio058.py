@@ -5,11 +5,11 @@ from random import randint
 
 tries = 1
 num = randint(0,10)
-value = int(input('Tente descobrir o nº q eu pensei: '))
+value = int(input('Tente descobrir o nº que eu pensei: '))
 while value != num:
     if value > num:
         value = int(input('Menos, tente de novo: '))
     else:
         value = int(input('Mais, tente de novo: '))
     tries += 1
-print('Boa, Eu escolhi {} e vc tentou {} vezes.' .format(num, tries))
+print(f'Sucesso! Eu escolhi {num} e vc tentou {tries} vezes.')

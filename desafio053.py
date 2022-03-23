@@ -1,6 +1,5 @@
 # Exercício Python 053: Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
 
-
 frase = str(input("Qual a frase? ").upper().replace(" ", ""))
 if frase == frase[::-1]:
     print("A frase é um palíndromo")
@@ -21,9 +20,9 @@ else:
 # junto = '' .join(palavras)
 # inverso = junto[::-1]
 # if inverso == junto:
-#     print('A palavra {} é igual ao seu palíndromo {}.' .format(junto, inverso))
+#     print(f'A palavra {junto} é igual ao seu palíndromo {inverso}.')
 # else:
-#     print('A palavra {} não é igual a {}, logo, isso ñ é um palindromo.' .format(junto, inverso))
+#     print(f'A palavra {junto} não é igual a {inverso}, logo, isso não é um palindromo.')
 
 
 # frase = str(input('Escreva uma frase: ')).strip() .upper()
@@ -36,4 +35,4 @@ else:
 # if junto == inverso:
 #     print('Palindro')
 # else:
-#     print('Ñ é palindro')
+#     print('Não é um palindro')

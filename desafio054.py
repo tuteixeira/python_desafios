@@ -2,19 +2,18 @@
 
 from datetime import date
 
-yeartoday = date.today().year
+year_today = date.today().year
 younger = 0
 older = 0
-olderYears = []
-youngerYear = []
-for c in range(1, 4):
+older_years = []
+younger_year = []
+for c in range(1, 8):
     year = int(input('Digite o ano de nascimento: '))
-    age = yeartoday - year
+    age = year_today - year
     if age >= 18:
         older += 1
-        olderYears.append(year)
+        older_years.append(year)
     else:
         younger += 1
-        youngerYear.append(year)
-print('Existem {} maiores que são os nascidos em {} e {} menores que são os nascidos em {}.' .format(older, olderYears, younger, youngerYear))
-
+        younger_year.append(year)
+print(f'Existem {older} maiores que são os nascidos em {older_years} e {younger} menores que são os nascidos em {younger_year}.')
