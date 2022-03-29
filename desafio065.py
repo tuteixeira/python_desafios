@@ -17,4 +17,4 @@ while resposta == 'S':
         elif num > maior:
             maior = num
 media = soma / quantidade
-print('Vc digitiu {} º e sua média é de {}, o maior valor é {} e o menor é {}.' .format(quantidade, media, maior, menor))
+print(f'Você digitiu {quantidade} números. A média é de {media:.2f}, o maior valor é {maior} e o menor é {menor}.')

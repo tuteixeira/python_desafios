@@ -2,11 +2,11 @@
 # que é a condição de parada. No final, mostre quantos números foram digitados e qual foi a soma entre elas (desconsiderando o flag).
 
 num = 0
-count = soma = 0
+count = sum = 0
 while True:
     num = int(input('[USE 999 PARA PARAR] Digite um nº: '))
     if num == 999:
         break
-    soma += num
+    sum += num
     count += 1
-print(f'Você digitou {count} nº e a soma deu {soma}.')
+print(f'Você digitou {count} números e a soma deu {sum}.')

@@ -1,5 +1,5 @@
 #Exercício Python 068: Faça um programa que jogue par ou ímpar com o computador.
-# O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
+#O jogo só será interrompido quando o jogador perder, mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
 
 from random import randint
 
@@ -26,4 +26,4 @@ while True:
         else:
             print(f'Perdeu, {num} + {com} é {sum} que é ímpar')
             break
-print(f'GAME OVER vc venceu {count} vezes. ' if count != 0 else ' GAME OVER TU NUNCA GANHOU')
+print(f'GAME OVER você venceu {count} vezes. ' if count != 0 else ' GAME OVER TU NUNCA GANHOU')
